@@ -1,0 +1,346 @@
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+
+/* Navbar dropdown */
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Akhir Navbar Dropdown */
+
+/* tampilan garis */
+hr {
+  width: 250px;
+  border-top: 3px solid #999;
+}
+
+section{
+  min-height: 600px;
+}
+
+/* tinggi halaman */
+.product {
+  min-height: 900px;
+}
+
+/* warna baground dan tinggi halaman */
+.about{
+  background-color: #eee;
+  min-height: 900px;
+}
+
+.about img {
+  width: 62px;
+  height: 62px;
+  margin: 2px;
+  padding: 1px;
+}
+
+.about img:hover {
+  transform: scale(1.1);
+}
+
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  padding-top: 30px;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+footer p i {
+  color: salmon;
+}
+
+/* akhir footer */
+
+/* tampilan dan animasi product */
+.hovereffects {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.hovereffects .overly {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out
+}
+
+.hovereffects img {
+  display: block;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.hovereffects h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0,0,0,0.6);
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffects a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffects a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffects:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffects:hover .overly {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
+.hovereffects:hover h2, .hovereffects:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hovereffects:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+/* akhir tampilan dan animasi product */
+
+/* tampilan text produk */
+.buttontext a:link, .about a:link {
+  color: #999;
+  text-decoration: none;
+}
+
+.buttonlink a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.buttontext a:hover, .about a:hover {
+  color: #87CEFA;
+  text-decoration: none;
+  background-color: none;
+}
+
+.buttonlink a:hover {
+  color: #999;
+  text-decoration: none;
+  background-color: none;
+}
+
+.buttontext a:active, .buttonlink a:active, .about a:active {
+  color: orange;
+  background-color: none;
+}
+/* akhir tampilan text produk */
+
+
+/* Icon Sosmed */
+.social-media-icon {
+        padding: 7px 8px 6px 8px;
+        background: #222;
+        color: #fff;
+        margin: 5px;
+        border-radius: 4px;
+    }
+    a.social-media-icon:hover{
+        background: #fff!important;
+        color: #222!important;
+    }
+    .facebook{
+        background:  #3c5a98!important;
+    }
+    .twitter{
+        background: #1da1f2!important;
+    }
+    .instagram{
+        background: #262626!important;;
+    }
+    /* Akhir Icon Sosmed */
+
+
+ /* Halaman Ke2 */
+
+.corporate {
+  min-height: 3400px;
+}
+
+/**membuat galery**/
+
+.thumbnail img {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.thumbnail img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+
+/* Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0);
+  z-index: 9999;
+  transition: .8s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+  animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -40px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  line-height: 14px;
+  padding: 5px;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slideDownFade .5s .5s forwards;
+}
+
+/* animasi */
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/* Halaman Ke3 */
+
+.man {
+  min-height: 1700px;
+}
+
+/* Halaman Ke4 */
+
+.arm {
+  min-height: 915px;
+}
