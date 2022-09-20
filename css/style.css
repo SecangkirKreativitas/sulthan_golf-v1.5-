@@ -55,7 +55,7 @@ section{
 /* warna baground dan tinggi halaman */
 .about{
   background-color: #eee;
-  min-height: 900px;
+  min-height: 500px;
 }
 
 .about img {
@@ -307,6 +307,35 @@ footer p i {
   animation: slideDownFade .5s .5s forwards;
 }
 
+/* navigasi */
+.overlay .next   {
+  width: 30px;
+  height: 50px;
+  background-image: url(../images/next.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: 50px;
+}
+
+.overlay .prev   {
+  width: 57px;
+  height: 50px;
+  background-image: url(../images/next.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: 50px;
+}
+
+.overlay .prev {
+  background-image: url(../images/prev.png);
+  margin-left: -100px;
+}
+
+
+
+
 /* animasi */
 @keyframes zoomDanFade {
   0% {
@@ -335,7 +364,7 @@ footer p i {
 
 /* Halaman Ke3 */
 
-.man {
+.men {
   min-height: 1700px;
 }
 
@@ -377,4 +406,168 @@ footer p i {
   background: #fb774b;
   opacity: 1;
   transition: 0.3s all;
+}
+
+
+
+
+
+
+/* khususu untuk output foto prodak */
+/* ini */
+
+.sproduct2 select {
+  display: block;
+  padding: 5px 10px;
+}
+
+.sproduct2 input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.sproduct2 input:focus {
+  outline: none;
+}
+
+/* ini */
+.overlay2 .stars{
+   padding:2rem 0;
+   font-size: 1.7rem;
+}
+
+/* ini */
+.overlay2 .stars i{
+   color:#27ae60;
+}
+
+/* ini */
+.overlay2 .stars span{
+   color:#999;
+}
+
+
+/* Khusus untuk Overlay2 Prodak */
+/* ini */
+.overlay2{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0);
+  z-index: 9999;
+  transition: .8s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* ini */
+.overlay2:target{
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+/* ini */
+.overlay2 img {
+  height: 25%;
+  width: 25%;
+  height: auto;
+  box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+  
+/* ini */
+.overlay2 .popup__content {
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0.20px 4px rgba(0,0,0, .2);
+
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  
+}
+
+/* ini */
+.overlay2:target img {
+  animation: zoomDanFade 1s;
+}
+
+/* ini */
+.overlay2:target .popup__content {
+  animation: zoomDanFade 1s;
+}
+
+/* ini */
+.overlay2 .close {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -40px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  line-height: 14px;
+  padding: 5px;
+  opacity: 0;
+}
+
+
+.overlay2:target .close {
+  animation: slideDownFade .5s .5s forwards;
+}
+
+
+/*=====Flexbox=====*/
+.partner{
+  background-color: #eee;
+  min-height: 400px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.wrapper {
+    width: 200px;
+    height: 300px;
+    background-color: #eee;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.center-flex .image,
+.center-flex .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-flex .image2,
+.center-flex .text {
+    display: flex;
+    justify-content: center;
+}
+
+.center-flex .image img,
+.center-flex .image2 img {
+    max-height: 150px; 
 }
