@@ -69,6 +69,26 @@ section{
   transform: scale(1.1);
 }
 
+.aboutus{
+  background-color: #eee;
+  min-height: 500px;
+}
+
+.visitus{
+  min-height: 400px;
+}
+
+.contact{
+  min-height: 700px;
+}
+
+.order{
+  min-height: 70px;
+}
+
+.shipping{
+  min-height: 70px;
+}
 
 /* footer */
 footer {
@@ -315,7 +335,7 @@ footer p i {
   position: absolute;
   text-indent: -9999px;
   top: 40%;
-  margin-left: 50px;
+  margin-left: -50px;
 }
 
 .overlay .prev   {
@@ -325,12 +345,12 @@ footer p i {
   position: absolute;
   text-indent: -9999px;
   top: 40%;
-  margin-left: 50px;
+  margin-left: -50px;
 }
 
 .overlay .prev {
   background-image: url(../images/prev.png);
-  margin-left: -100px;
+  margin-left: -4px;
 }
 
 
@@ -549,7 +569,7 @@ footer p i {
     border-radius: 10px;
     float: left;
     margin-right: 20px;
-    padding: 10px;
+    padding: 70px;
     margin-bottom: 20px;
 }
 
@@ -570,4 +590,15 @@ footer p i {
 .center-flex .image img,
 .center-flex .image2 img {
     max-height: 150px; 
+}
+
+/*=====Order img responsive=====*/
+.fit img{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 20px;
 }
