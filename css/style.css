@@ -52,6 +52,10 @@ section{
   min-height: 900px;
 }
 
+.tshert, .bag, .merchandise, .accesories {
+  min-height: 950px;
+}
+
 /* warna baground dan tinggi halaman */
 .about{
   background-color: #eee;
@@ -259,7 +263,7 @@ footer p i {
  /* Halaman Ke2 */
 
 .corporate {
-  min-height: 3400px;
+  min-height: 950px;
 }
 
 /**membuat galery**/
