@@ -484,7 +484,7 @@ footer p i {
   top: 0;
   left: 0;
   background: rgba(0,0,0,0);
-  z-index: 9999;
+  z-index: 9999;img
   transition: .8s;
   text-align: center;
   padding: 100px 0;
@@ -551,20 +551,7 @@ footer p i {
 
 
 /*=====Flexbox=====*/
-.partner{
-  background-color: #eee;
-  min-height: 400px;
-}
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-.clearfix {
-    clear: both;
-}
 
 .wrapper {
     width: 200px;
